@@ -1,0 +1,67 @@
+[
+  {
+    "photo_id": 133480893,
+    "note": "Несколько бабочек на одном кадре: каждую выделять отдельно.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 63306911,
+    "note": "Группа бабочек: внимательно проверить количество объектов и перекрытия.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 62951986,
+    "note": "Несколько бабочек на стволе; проверить весь кадр.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 315891503,
+    "note": "Бабочки перекрываются. Нужны отдельные рамки по видимым частям.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 62858285,
+    "note": "Очень мелкий и нечёткий объект среди цветов. Проверять оригинал; при сомнениях — ручной разбор.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 64397801,
+    "note": "Дальний план кроны и паутины/кокона. Категория наблюдения pupa не задаёт ответ о взрослых бабочках.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 316095270,
+    "note": "Следы минирования листа. Категория larva относится к наблюдению; не размечать следы как взрослую бабочку.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 316082217,
+    "note": "Следы минирования на листе. Требуется обычная проверка всего изображения на взрослых бабочек.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 133701668,
+    "note": "Препарированный экземпляр на светлом фоне: отдельный сценарий съёмки.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 133713776,
+    "note": "Препарированный экземпляр на светлом фоне: отдельный сценарий съёмки.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 133724124,
+    "note": "Препарированный экземпляр на светлом фоне: отдельный сценарий съёмки.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 62540562,
+    "note": "Бабочка в движении, размытие и сложный фон. Уделить внимание видимым границам.",
+    "review_type": "agent_preview_only_not_human_gold"
+  },
+  {
+    "photo_id": 133417146,
+    "note": "Бабочка за стенкой контейнера: учитывать только видимые части.",
+    "review_type": "agent_preview_only_not_human_gold"
+  }
+]

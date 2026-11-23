@@ -1,0 +1,29 @@
+{
+  "total": 500,
+  "split_counts": {
+    "main400": 400,
+    "training30": 30,
+    "bbox_exam20": 20,
+    "review_exam20": 20,
+    "control30": 30
+  },
+  "group_counts": {
+    "day": 225,
+    "night": 50,
+    "larva": 19,
+    "pupa": 6,
+    "hymenoptera": 62,
+    "beetle": 63,
+    "plant": 75
+  },
+  "authors": 232,
+  "taxa": 404,
+  "max_photos_per_author": 12,
+  "max_photos_per_taxon": 6,
+  "bytes": 546968141,
+  "exif_orientations": {
+    "1": 500
+  },
+  "status": "proposal_pending_human_bbox_and_review",
+  "seed": 20261115
+}

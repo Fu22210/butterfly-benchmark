@@ -1,0 +1,61 @@
+{
+  "public_name": "Тренировка рамок бабочек",
+  "public_description": "Прямоугольные рамки взрослых дневных и ночных бабочек.",
+  "public_instructions": "<p>Обведите всех взрослых дневных и ночных бабочек. Для каждого объекта нужна одна плотная рамка вокруг видимых крыльев, тела, усиков и лапок. Скрытые части не достраивайте. Других насекомых, гусениц и куколок не выделяйте.</p>",
+  "task_spec": {
+    "input_spec": {
+      "photo_id": {
+        "type": "integer",
+        "required": true,
+        "hidden": true
+      },
+      "image": {
+        "type": "url",
+        "required": true,
+        "hidden": false
+      },
+      "reference": {
+        "type": "json",
+        "required": true,
+        "hidden": false
+      }
+    },
+    "output_spec": {
+      "result": {
+        "type": "json",
+        "required": true
+      },
+      "status": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "boxes",
+          "none",
+          "load_error"
+        ]
+      },
+      "passed": {
+        "type": "boolean",
+        "required": true
+      }
+    },
+    "view_spec": {
+      "type": "classic",
+      "assets": {
+        "script_urls": [
+          "$TOLOKA_ASSETS/js/toloka-handlebars-templates.js"
+        ]
+      },
+      "markup": "<section class=\"bbox-lesson\">\n  <p>Выделите всех взрослых бабочек, включая ночных. Для каждой нарисуйте отдельную рамку вокруг видимых крыльев, тела, усиков и лапок. За пределами кадра и за препятствием рамку не достраивайте.</p>\n  <div class=\"bbox-picture\">\n    <img class=\"bbox-photo\" src=\"{{image}}\" alt=\"Фотография для разметки\" draggable=\"false\">\n    <svg class=\"bbox-layer\" viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\" aria-label=\"Нарисуйте прямоугольник перетаскиванием\"></svg>\n  </div>\n  <div class=\"bbox-controls\">\n    <button type=\"button\" data-bbox=\"undo\">Убрать последнюю</button>\n    <button type=\"button\" data-bbox=\"none\">Нет взрослых бабочек</button>\n    <button type=\"button\" data-bbox=\"load_error\">Ошибка загрузки</button>\n    <button type=\"button\" data-bbox=\"check\">Проверить ответ</button>\n  </div>\n  <p class=\"bbox-feedback\" role=\"status\" aria-live=\"polite\"></p>\n</section>\n",
+      "styles": ".bbox-lesson { font: 15px/1.5 system-ui,sans-serif; max-width: 940px; }\n.bbox-picture { position: relative; width: fit-content; max-width: 100%; }\n.bbox-photo { display:block; width:auto; height:auto; max-width:100%; max-height:68vh; image-orientation:from-image; }\n.bbox-layer { position:absolute; inset:0; height:100%; width:100%; touch-action:none; cursor:crosshair; }\n.bbox-layer rect { fill:#29b69022; stroke:#00e0a8; stroke-width:2.5; vector-effect:non-scaling-stroke; }\n.bbox-controls { display:flex; flex-wrap:wrap; gap:7px; margin-top:9px; }\n.bbox-feedback { min-height:1.5em; font-weight:600; }\n",
+      "script": "/* One class: adult butterfly or moth. Rectangles use relative coordinates. */\nconst BBOX_POLICY = Object.freeze({ iou: 0.50, coverage: 0.85, precision: 0.55 });\nconst BBOX_EPS = 1e-6;\n\nfunction parseRects(value) {\n  if (typeof value === \"string\") value = JSON.parse(value);\n  if (!Array.isArray(value)) throw new Error(\"Ожидается список прямоугольников.\");\n  return value.map(shape => {\n    let x1, y1, x2, y2;\n    if (shape && shape.type === \"rectangle\" && shape.data?.p1 && shape.data?.p2) {\n      const {p1, p2} = shape.data;\n      if (![p1.x,p1.y,p2.x,p2.y].every(Number.isFinite)) throw new Error(\"Некорректные координаты.\");\n      x1 = Math.min(p1.x,p2.x); y1 = Math.min(p1.y,p2.y);\n      x2 = Math.max(p1.x,p2.x); y2 = Math.max(p1.y,p2.y);\n    } else if (shape && !shape.type && [shape.left,shape.top,shape.width,shape.height].every(Number.isFinite)) {\n      ({left:x1, top:y1} = shape);\n      x2 = x1 + shape.width; y2 = y1 + shape.height;\n    } else {\n      throw new Error(\"Используйте прямоугольные рамки.\");\n    }\n    if (Math.min(x1,y1) < -BBOX_EPS || Math.max(x2,y2) > 1+BBOX_EPS || x2<=x1 || y2<=y1) {\n      throw new Error(\"Рамка должна иметь площадь и находиться внутри кадра.\");\n    }\n    return {x1:Math.max(0,x1), y1:Math.max(0,y1), x2:Math.min(1,x2), y2:Math.min(1,y2)};\n  });\n}\n\nfunction measures(mark, reference) {\n  const area = b => (b.x2-b.x1)*(b.y2-b.y1);\n  const common = Math.max(0,Math.min(mark.x2,reference.x2)-Math.max(mark.x1,reference.x1)) *\n                 Math.max(0,Math.min(mark.y2,reference.y2)-Math.max(mark.y1,reference.y1));\n  return {\n    iou: common/(area(mark)+area(reference)-common),\n    coverage: common/area(reference),\n    precision: common/area(mark),\n  };\n}\n\nfunction gradeBoxes(submitted, reference, policy=BBOX_POLICY) {\n  let expected, marks;\n  try { expected = parseRects(reference); }\n  catch { return {ok:false,code:\"invalid_reference\",message:\"Эталон задания повреждён. Сообщите заказчику.\"}; }\n  try { marks = parseRects(submitted); }\n  catch (e) { return {ok:false,code:\"invalid_response\",message:e.message}; }\n  if (marks.length !== expected.length) {\n    return {ok:false,code:\"count\",message:\"Проверьте число рамок. На каждую видимую взрослую бабочку нужна отдельная рамка.\"};\n  }\n\n  const edges = marks.map(mark => expected.map((target,i) => ({i,...measures(mark,target)}))\n    .filter(m => m.iou+BBOX_EPS>=policy.iou && m.coverage+BBOX_EPS>=policy.coverage &&\n      m.precision+BBOX_EPS>=policy.precision).sort((a,b)=>b.iou-a.iou));\n  const owner = new Array(expected.length).fill(-1);\n  function match(mark,seen) {\n    for (const {i} of edges[mark]) {\n      if (seen.has(i)) continue;\n      seen.add(i);\n      if (owner[i]===-1 || match(owner[i],seen)) { owner[i]=mark; return true; }\n    }\n    return false;\n  }\n  if (!marks.every((_,i)=>match(i,new Set()))) {\n    return {ok:false,code:\"geometry\",message:\"Проверьте границы. Включите видимые крылья, тело, усики и лапки. Уберите лишний фон.\"};\n  }\n  return {ok:true,code:\"pass\",message:\"Верно. Можно переходить к следующему кадру.\"};\n}\n\nfunction gradeAnswer(status, result, reference) {\n  if (status===\"load_error\") return {ok:false,code:\"load_error\",message:\"Изображение не загрузилось. Пропустите задание или сообщите заказчику.\"};\n  if (status!==\"boxes\" && status!==\"none\") return {ok:false,code:\"status\",message:\"Нарисуйте рамки или явно отметьте, что взрослых бабочек нет.\"};\n  let marks;\n  try { marks=parseRects(result); }\n  catch (e) { return {ok:false,code:\"invalid_response\",message:e.message}; }\n  if ((status===\"none\") !== (marks.length===0)) {\n    return {ok:false,code:\"status\",message:\"Ответ «Нет взрослых бабочек» должен быть без рамок.\"};\n  }\n  return gradeBoxes(result,reference);\n}\n\nif (typeof module !== \"undefined\" && module.exports) {\n  module.exports={gradeBoxes,gradeAnswer,parseRects,measures,BBOX_POLICY};\n}\n\nfunction mountBoxTraining(section, reference, saved, commit) {\n  const image = section.querySelector(\".bbox-photo\");\n  const layer = section.querySelector(\".bbox-layer\");\n  const feedback = section.querySelector(\".bbox-feedback\");\n  let shapes = Array.isArray(saved.result) ? saved.result : [];\n  let status = saved.status || \"unset\";\n  let pointer = null;\n  let start = null;\n  let loaded = image.complete && image.naturalWidth > 0;\n  function point(event) {\n    const rect = layer.getBoundingClientRect();\n    const unit = value => Math.min(1,Math.max(0,value));\n    return {x:unit((event.clientX-rect.left)/rect.width),y:unit((event.clientY-rect.top)/rect.height)};\n  }\n  function draw(draft) {\n    const current = draft ? shapes.concat(draft) : shapes;\n    const nodes = current.map(shape => {\n      const {p1,p2} = shape.data;\n      const node = document.createElementNS(\"http://www.w3.org/2000/svg\",\"rect\");\n      node.setAttribute(\"x\",Math.min(p1.x,p2.x));\n      node.setAttribute(\"y\",Math.min(p1.y,p2.y));\n      node.setAttribute(\"width\",Math.abs(p2.x-p1.x));\n      node.setAttribute(\"height\",Math.abs(p2.y-p1.y));\n      return node;\n    });\n    layer.replaceChildren(...nodes);\n  }\n  function change() {\n    draw();\n    commit({status,result:shapes,passed:loaded && gradeAnswer(status,shapes,reference).ok});\n  }\n  function check() {\n    const verdict = !loaded && status!==\"load_error\"\n      ? {ok:false,message:\"Дождитесь загрузки изображения или отметьте ошибку загрузки.\"}\n      : gradeAnswer(status,shapes,reference);\n    feedback.textContent = verdict.message;\n    commit({status,result:shapes,passed:verdict.ok});\n    return verdict;\n  }\n  layer.addEventListener(\"pointerdown\",event => {\n    if (!loaded || pointer!==null || event.button!==0 || shapes.length>=100) return;\n    pointer = event.pointerId;\n    start = point(event);\n    layer.setPointerCapture(pointer);\n  });\n  layer.addEventListener(\"pointermove\",event => {\n    if (event.pointerId===pointer) draw({type:\"rectangle\",data:{p1:start,p2:point(event)}});\n  });\n  layer.addEventListener(\"pointerup\",event => {\n    if (event.pointerId!==pointer) return;\n    const end = point(event);\n    const bounds = layer.getBoundingClientRect();\n    if (Math.abs(end.x-start.x)*bounds.width>=3 && Math.abs(end.y-start.y)*bounds.height>=3) {\n      shapes = shapes.concat({type:\"rectangle\",data:{p1:start,p2:end}});\n      status = \"boxes\";\n      feedback.textContent = \"\";\n    }\n    pointer = null;\n    start = null;\n    change();\n  });\n  layer.addEventListener(\"pointercancel\",event => {\n    if (event.pointerId!==pointer) return;\n    pointer = null;\n    start = null;\n    draw();\n  });\n  image.addEventListener(\"load\",()=>{loaded=true; if (status!==\"unset\") change();});\n  image.addEventListener(\"error\",()=>{loaded=false;feedback.textContent=\"Изображение не загрузилось.\";});\n  section.querySelector('[data-bbox=\"undo\"]').addEventListener(\"click\",()=>{\n    shapes=shapes.slice(0,-1);\n    status=shapes.length?\"boxes\":\"unset\";\n    feedback.textContent=\"\";\n    change();\n  });\n  for (const selection of [\"none\",\"load_error\"]) {\n    section.querySelector('[data-bbox=\"'+selection+'\"]').addEventListener(\"click\",()=>{\n      shapes=[];\n      status=selection;\n      feedback.textContent=selection===\"none\"?\"Отмечено отсутствие взрослых бабочек.\":\"Отмечена ошибка загрузки.\";\n      change();\n    });\n  }\n  section.querySelector('[data-bbox=\"check\"]').addEventListener(\"click\",check);\n  draw();\n  return {check,isLoaded:()=>loaded};\n}\n\nif (typeof TolokaHandlebarsTask !== \"undefined\") {\n  function BoxTrainingTask(options) {\n    TolokaHandlebarsTask.call(this,options);\n  }\n  BoxTrainingTask.prototype = Object.create(TolokaHandlebarsTask.prototype);\n  Object.assign(BoxTrainingTask.prototype, {\n    onRender: function () {\n      const root = this.getDOMElement();\n      const section = root.matches(\".bbox-lesson\") ? root : root.querySelector(\".bbox-lesson\");\n      const input = this.getTask().input_values;\n      const output = this.getSolution()?.output_values || {};\n      this.bboxLesson = mountBoxTraining(section,input.reference,output,\n        values=>this.setSolutionOutputValues(values));\n    },\n    validate: function (solution) {\n      const output = (solution || this.getSolution())?.output_values || {};\n      const verdict = gradeAnswer(output.status,output.result,this.getTask().input_values.reference);\n      if (this.bboxLesson && !this.bboxLesson.isLoaded() && output.status!==\"load_error\") {\n        const waiting = this.bboxLesson.check();\n        return {result:{code:\"not_loaded\",message:waiting.message}};\n      }\n      if (!verdict.ok) {\n        this.bboxLesson?.check();\n        return {result:{code:verdict.code,message:verdict.message}};\n      }\n      return TolokaHandlebarsTask.prototype.validate.call(this,solution);\n    }\n  });\n  exports.Task = BoxTrainingTask;\n}\n",
+      "settings": {
+        "showSubmit": true,
+        "showSkip": true,
+        "showInstructions": true
+      }
+    }
+  },
+  "assignments_issuing_type": "AUTOMATED",
+  "assignments_automerge_enabled": false
+}

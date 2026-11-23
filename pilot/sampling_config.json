@@ -1,0 +1,89 @@
+{
+  "seed": 20261115,
+  "groups": {
+    "day": {
+      "taxon_id": 47224,
+      "term_id": 1,
+      "term_value_id": 2
+    },
+    "night": {
+      "taxon_id": 47157,
+      "without_taxon_id": 47224,
+      "term_id": 1,
+      "term_value_id": 2
+    },
+    "larva": {
+      "taxon_id": 47157,
+      "term_id": 1,
+      "term_value_id": 6
+    },
+    "pupa": {
+      "taxon_id": 47157,
+      "term_id": 1,
+      "term_value_id": 4
+    },
+    "hymenoptera": {
+      "taxon_id": 47201,
+      "term_id": 1,
+      "term_value_id": 2
+    },
+    "beetle": {
+      "taxon_id": 47208,
+      "term_id": 1,
+      "term_value_id": 2
+    },
+    "plant": {
+      "taxon_id": 47126
+    }
+  },
+  "quotas": {
+    "main400": [
+      180,
+      40,
+      15,
+      5,
+      50,
+      50,
+      60
+    ],
+    "training30": [
+      13,
+      3,
+      1,
+      0,
+      4,
+      4,
+      5
+    ],
+    "bbox_exam20": [
+      9,
+      2,
+      1,
+      0,
+      2,
+      3,
+      3
+    ],
+    "review_exam20": [
+      9,
+      2,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    "control30": [
+      14,
+      3,
+      2,
+      0,
+      4,
+      3,
+      4
+    ]
+  },
+  "max_per_author": 12,
+  "max_per_taxon": 6,
+  "near_duplicate_dhash_distance": 3
+}

@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+butterfly_dataset/*/images/
+butterfly_dataset/review/thumbnails/
+butterfly_bbox/previews/
+butterfly_bbox/thumbnails/
+pilot/cache/
+pilot/images/
+pilot/previews/
+pilot/contact_sheets/

@@ -1,0 +1,53 @@
+{
+  "public_name": "Рамки взрослых бабочек",
+  "public_description": "Прямоугольные рамки взрослых дневных и ночных бабочек.",
+  "public_instructions": "<p>Обведите всех взрослых дневных и ночных бабочек. Для каждого объекта нужна одна плотная рамка вокруг видимых крыльев, тела, усиков и лапок. Скрытые части не достраивайте. Других насекомых, гусениц и куколок не выделяйте.</p>",
+  "task_spec": {
+    "input_spec": {
+      "photo_id": {
+        "type": "integer",
+        "required": true,
+        "hidden": true
+      },
+      "image": {
+        "type": "url",
+        "required": true,
+        "hidden": false
+      }
+    },
+    "output_spec": {
+      "result": {
+        "type": "json",
+        "required": false
+      },
+      "status": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "boxes",
+          "none",
+          "load_error"
+        ]
+      }
+    },
+    "view_spec": {
+      "type": "classic",
+      "assets": {
+        "script_urls": [
+          "$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
+          "$TOLOKA_ASSETS/js/image-annotation.js"
+        ]
+      },
+      "markup": "<p>Выделите всех видимых взрослых бабочек, включая ночных. На каждую нужна отдельная плотная рамка вокруг видимых крыльев, тела, усиков и лапок. Отметьте итоговый статус внизу.</p>\n{{field type=\"image-annotation\" name=\"result\" src=image}}\n<div class=\"annotation-status\">\n  {{field type=\"radio\" name=\"status\" value=\"boxes\" label=\"Взрослые бабочки выделены\"}}\n  {{field type=\"radio\" name=\"status\" value=\"none\" label=\"Нет взрослых бабочек\"}}\n  {{field type=\"radio\" name=\"status\" value=\"load_error\" label=\"Ошибка загрузки\"}}\n</div>\n",
+      "styles": ".image-annotation-editor__shape-polygon { display:none; }\n.annotation-status { margin:10px 0; display:flex; flex-wrap:wrap; gap:8px; }\n",
+      "script": "function BoxProductionTask(options) {\n  TolokaHandlebarsTask.call(this,options);\n}\nBoxProductionTask.prototype=Object.create(TolokaHandlebarsTask.prototype);\nBoxProductionTask.prototype.validate=function (solution) {\n  const out=(solution || this.getSolution()).output_values || {};\n  const shapes=out.result || [];\n  const fieldError=message=>({result:{code:\"bbox_format\",message}});\n  if (!Array.isArray(shapes) || shapes.some(s=>s?.type!==\"rectangle\")) {\n    return fieldError(\"Выделяйте объекты только прямоугольниками.\");\n  }\n  if (out.status===\"boxes\" && !shapes.length) {\n    return fieldError(\"Добавьте хотя бы одну рамку.\");\n  }\n  if ((out.status===\"none\" || out.status===\"load_error\") && shapes.length) {\n    return fieldError(\"Удалите рамки или измените статус ответа.\");\n  }\n  return TolokaHandlebarsTask.prototype.validate.call(this,solution);\n};\nexports.Task=BoxProductionTask;\n",
+      "settings": {
+        "showSubmit": true,
+        "showSkip": true,
+        "showInstructions": true
+      }
+    }
+  },
+  "assignments_issuing_type": "AUTOMATED",
+  "assignments_automerge_enabled": false
+}

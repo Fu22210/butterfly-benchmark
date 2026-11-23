@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Тренировка разметки бабочек</title>
+<style>
+body{margin:24px;font:15px/1.45 system-ui,sans-serif;color:#223027;background:#f3f5f0}
+main{max-width:1000px;margin:auto} a{color:#225a46} button,select{font:inherit}
+.bbox-lesson { font: 15px/1.5 system-ui,sans-serif; max-width: 940px; }
+.bbox-picture { position: relative; width: fit-content; max-width: 100%; }
+.bbox-photo { display:block; width:auto; height:auto; max-width:100%; max-height:68vh; image-orientation:from-image; }
+.bbox-layer { position:absolute; inset:0; height:100%; width:100%; touch-action:none; cursor:crosshair; }
+.bbox-layer rect { fill:#29b69022; stroke:#00e0a8; stroke-width:2.5; vector-effect:non-scaling-stroke; }
+.bbox-controls { display:flex; flex-wrap:wrap; gap:7px; margin-top:9px; }
+.bbox-feedback { min-height:1.5em; font-weight:600; }
+
+</style>
+<main>
+<p><a href="gallery.html">Галерея рамок</a></p>
+<h1>Тренировка разметки</h1>
+<label>Пример <select id="case"></select></label>
+<button type="button" id="hint">Подсказка</button>
+<p id="clue" hidden></p>
+<div id="fixture"></div>
+</main>
+<template id="sample"><section class="bbox-lesson">
+  <p>Выделите всех взрослых бабочек, включая ночных. Для каждой нарисуйте отдельную рамку вокруг видимых крыльев, тела, усиков и лапок. За пределами кадра и за препятствием рамку не достраивайте.</p>
+  <div class="bbox-picture">
+    <img class="bbox-photo" src="{{image}}" alt="Фотография для разметки" draggable="false">
+    <svg class="bbox-layer" viewBox="0 0 1 1" preserveAspectRatio="none" aria-label="Нарисуйте прямоугольник перетаскиванием"></svg>
+  </div>
+  <div class="bbox-controls">
+    <button type="button" data-bbox="undo">Убрать последнюю</button>
+    <button type="button" data-bbox="none">Нет взрослых бабочек</button>
+    <button type="button" data-bbox="load_error">Ошибка загрузки</button>
+    <button type="button" data-bbox="check">Проверить ответ</button>
+  </div>
+  <p class="bbox-feedback" role="status" aria-live="polite"></p>
+</section>
+</template>
+<script src="yandex/training.js"></script>
+<script type="application/json" id="cases">[{"photo_id":2356956,"case":"side_view","hint":"Включите тонкие лапки и усики за контуром крыла.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/2356956/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.190736,"y":0.216374},"p2":{"x":0.885559,"y":0.845029}}}],"local_image":"../butterfly_dataset/main/images/2356956.jpg","status":"boxes"},{"photo_id":1829765,"case":"side_view","hint":"Антенны выходят влево за пределы крыла.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/1829765/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.392544,"y":0.291022},"p2":{"x":0.684211,"y":0.653251}}}],"local_image":"../butterfly_dataset/main/images/1829765.jpg","status":"boxes"},{"photo_id":1040387,"case":"moth","hint":"Взрослая ночная бабочка получает ту же целевую метку.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/1040387/original.JPG","reference":[{"type":"rectangle","data":{"p1":{"x":0.138158,"y":0.153595},"p2":{"x":0.907895,"y":0.79085}}}],"local_image":"../butterfly_dataset/main/images/1040387.jpg","status":"boxes"},{"photo_id":198635,"case":"moth","hint":"Взрослая ночная бабочка на руке, рамка по видимым краям крыльев.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/198635/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.067982,"y":0.219298},"p2":{"x":1.0,"y":0.77193}}}],"local_image":"../butterfly_dataset/main/images/198635.jpg","status":"boxes"},{"photo_id":397005,"case":"moth","hint":"Белая ночная бабочка на листе.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/397005/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.21197,"y":0.052632},"p2":{"x":0.870324,"y":0.909357}}}],"local_image":"../butterfly_dataset/main/images/397005.jpg","status":"boxes"},{"photo_id":700024,"case":"other_insect","hint":"На снимке божья коровка.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/700024/original.jpg","reference":[],"local_image":"../butterfly_dataset/main/images/700024.jpg","status":"none"},{"photo_id":552829,"case":"other_insect","hint":"На цветке пчела.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/552829/original.jpg","reference":[],"local_image":"../butterfly_dataset/main/images/552829.jpg","status":"none"},{"photo_id":833522,"case":"caterpillar","hint":"Гусеницу не выделяют.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/833522/original.jpg","reference":[],"local_image":"../butterfly_dataset/main/images/833522.jpg","status":"none"},{"photo_id":552878,"case":"partly_occluded","hint":"Отдельная рамка охватывает видимые части за соцветием.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/552878/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.399123,"y":0.134503},"p2":{"x":0.870614,"y":0.745614}}}],"local_image":"../butterfly_dataset/main/images/552878.jpg","status":"boxes"},{"photo_id":2271584,"case":"clipped","hint":"Правое крыло обрезано краем кадра. Рамка заканчивается у края.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/2271584/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.08114,"y":0.204403},"p2":{"x":1.0,"y":0.949686}}}],"local_image":"../butterfly_dataset/main/images/2271584.jpg","status":"boxes"},{"photo_id":710288,"case":"multiple","hint":"Два объекта касаются друг друга. Для каждого нужна своя рамка.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/710288/original.JPG","reference":[{"type":"rectangle","data":{"p1":{"x":0.315789,"y":0.229508},"p2":{"x":0.58114,"y":0.652459}}},{"type":"rectangle","data":{"p1":{"x":0.532895,"y":0.380328},"p2":{"x":0.802632,"y":0.842623}}}],"local_image":"../butterfly_dataset/main/images/710288.jpg","status":"boxes"},{"photo_id":1448632,"case":"small","hint":"Бабочка мала и находится среди красных цветов.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/1448632/original.jpg","reference":[{"type":"rectangle","data":{"p1":{"x":0.414062,"y":0.383041},"p2":{"x":0.558593,"y":0.482456}}}],"local_image":"../butterfly_dataset/main/images/1448632.jpg","status":"boxes"},{"photo_id":19199,"case":"background","hint":"На снимке растительность без видимых взрослых бабочек.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/19199/original.jpg","reference":[],"local_image":"../butterfly_dataset/main/images/19199.jpg","status":"none"},{"photo_id":18976,"case":"background","hint":"На снимке растительность без видимых взрослых бабочек.","image":"https://inaturalist-open-data.s3.amazonaws.com/photos/18976/original.jpg","reference":[],"local_image":"../butterfly_dataset/main/images/18976.jpg","status":"none"}]</script>
+<script>
+const cases=JSON.parse(document.getElementById("cases").textContent);
+const select=document.getElementById("case"), fixture=document.getElementById("fixture"), clue=document.getElementById("clue");
+cases.forEach((r,i)=>select.add(new Option((i+1)+" · фото "+r.photo_id,String(i))));
+function start(){
+  const row=cases[Number(select.value)];
+  fixture.replaceChildren(document.getElementById("sample").content.cloneNode(true));
+  fixture.querySelector("img").src=row.local_image;
+  mountBoxTraining(fixture.firstElementChild,row.reference,{},()=>{});
+  clue.textContent=row.hint;clue.hidden=true;
+}
+select.onchange=start;
+document.getElementById("hint").onclick=()=>{clue.hidden=!clue.hidden;};
+start();
+</script>
+</html>

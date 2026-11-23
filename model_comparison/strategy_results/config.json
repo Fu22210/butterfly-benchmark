@@ -1,0 +1,5 @@
+{
+  "detector": "owl",
+  "confidence": 0.4,
+  "confirm_iou": 0.3
+}

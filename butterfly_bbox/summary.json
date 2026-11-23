@@ -1,0 +1,12 @@
+{
+  "images": 400,
+  "with_boxes": 191,
+  "boxes": 192,
+  "statuses": {
+    "model_draft": 372,
+    "practice_reference": 14,
+    "visually_corrected": 14
+  },
+  "model": "microsoft/Florence-2-base-ft",
+  "revision": "f6c1a25888ffc1d945ee8a1a77ac833c7303d46e"
+}

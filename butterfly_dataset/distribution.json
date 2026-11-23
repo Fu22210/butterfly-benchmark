@@ -1,0 +1,2383 @@
+{
+  "quantile_probabilities": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1
+  ],
+  "main": {
+    "total": {
+      "n": 400,
+      "portrait": 70,
+      "pixel_width": [
+        358.0,
+        720.0,
+        1062.5,
+        1500.0,
+        2048.0,
+        2048.0,
+        2048.0
+      ],
+      "pixel_height": [
+        325.0,
+        643.3,
+        900.0,
+        1240.5,
+        1516.25,
+        2048.0,
+        2048.0
+      ],
+      "megapixels": [
+        0.131,
+        0.485,
+        0.966,
+        1.927,
+        2.796,
+        3.146,
+        4.104
+      ],
+      "aspect_ratio": [
+        0.562,
+        0.75,
+        1.095,
+        1.333,
+        1.5,
+        1.5,
+        2.073
+      ],
+      "luminance": [
+        35.615,
+        88.3,
+        105.488,
+        121.561,
+        134.918,
+        149.98,
+        189.279
+      ],
+      "contrast": [
+        14.639,
+        32.652,
+        37.909,
+        44.829,
+        54.022,
+        61.755,
+        89.773
+      ],
+      "saturation": [
+        0.037,
+        0.164,
+        0.252,
+        0.358,
+        0.485,
+        0.586,
+        0.909
+      ],
+      "detail": [
+        5.547,
+        7.108,
+        7.576,
+        8.126,
+        8.631,
+        8.986,
+        9.954
+      ]
+    },
+    "groups": {
+      "beetle": {
+        "n": 50,
+        "portrait": 7,
+        "pixel_width": [
+          400.0,
+          716.7,
+          869.0,
+          1421.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          338.0,
+          570.1,
+          738.75,
+          1062.5,
+          1365.75,
+          1536.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.146,
+          0.43,
+          0.684,
+          1.597,
+          2.796,
+          3.127,
+          4.104
+        ],
+        "aspect_ratio": [
+          0.562,
+          0.976,
+          1.168,
+          1.333,
+          1.475,
+          1.5,
+          2.073
+        ],
+        "luminance": [
+          80.153,
+          113.061,
+          125.753,
+          134.259,
+          151.621,
+          161.515,
+          189.279
+        ],
+        "contrast": [
+          27.402,
+          33.703,
+          38.781,
+          44.348,
+          53.606,
+          57.014,
+          72.062
+        ],
+        "saturation": [
+          0.037,
+          0.132,
+          0.22,
+          0.309,
+          0.392,
+          0.501,
+          0.675
+        ],
+        "detail": [
+          5.778,
+          6.566,
+          7.053,
+          7.584,
+          8.126,
+          8.574,
+          9.954
+        ],
+        "source_observations_with_metadata": 50,
+        "quality_grade": {
+          "needs_id": 10,
+          "research": 40
+        },
+        "source_taxa": {
+          "Anomoea laticlavia": 1,
+          "Asiopus minimus": 1,
+          "Chauliognathus pensylvanicus": 1,
+          "Chlaenius": 1,
+          "Chrysolina bankii": 1,
+          "Cicindela depressula": 1,
+          "Cicindela oregona": 1,
+          "Cicindela repanda": 1,
+          "Cicindela sexguttata": 2,
+          "Coccinella californica": 4,
+          "Coccinella septempunctata": 3,
+          "Coccinella trifasciata subversa": 1,
+          "Cremastocheilus": 1,
+          "Diabrotica undecimpunctata": 1,
+          "Dicerca lurida": 1,
+          "Elateridae": 1,
+          "Eleodes acuticauda": 1,
+          "Endaeus orchidearum": 1,
+          "Haliplus immaculicollis": 1,
+          "Harmonia axyridis": 5,
+          "Hippodamia convergens": 3,
+          "Hippodamia quinquesignata": 1,
+          "Hoplia": 1,
+          "Labidomera clivicollis": 1,
+          "Mallodon dasystomus": 1,
+          "Megacyllene decora": 1,
+          "Megacyllene robiniae": 1,
+          "Megalodacne heros": 1,
+          "Meloinae": 1,
+          "Nicrophorus orbicollis": 1,
+          "Odontotaenius disjunctus": 1,
+          "Phileurus valgus": 1,
+          "Popillia japonica": 1,
+          "Promecognathus crassus": 1,
+          "Pyropyga": 1,
+          "Scaphinotus": 1,
+          "Silis": 1,
+          "Tetraopes tetrophthalmus": 1
+        },
+        "unique_observers": 11,
+        "observation_created_year": {
+          "2013": 23,
+          "2014": 16,
+          "2015": 9,
+          "2016": 2
+        }
+      },
+      "butterfly": {
+        "n": 181,
+        "portrait": 23,
+        "pixel_width": [
+          358.0,
+          680.0,
+          1024.0,
+          1482.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          325.0,
+          554.0,
+          800.0,
+          1242.0,
+          1536.0,
+          1771.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.131,
+          0.366,
+          0.758,
+          2.11,
+          2.92,
+          3.228,
+          4.08
+        ],
+        "aspect_ratio": [
+          0.664,
+          0.924,
+          1.092,
+          1.275,
+          1.493,
+          1.5,
+          1.778
+        ],
+        "luminance": [
+          54.069,
+          82.342,
+          103.404,
+          119.714,
+          135.248,
+          148.62,
+          182.255
+        ],
+        "contrast": [
+          22.649,
+          32.665,
+          38.71,
+          46.622,
+          56.362,
+          63.004,
+          89.773
+        ],
+        "saturation": [
+          0.077,
+          0.246,
+          0.309,
+          0.394,
+          0.515,
+          0.629,
+          0.826
+        ],
+        "detail": [
+          5.907,
+          7.128,
+          7.626,
+          8.222,
+          8.71,
+          9.074,
+          9.583
+        ],
+        "source_observations_with_metadata": 181,
+        "quality_grade": {
+          "research": 172,
+          "needs_id": 8,
+          "casual": 1
+        },
+        "source_taxa": {
+          "Adelpha californica": 1,
+          "Adelpha eulalia": 1,
+          "Aglais milberti": 1,
+          "Agriades podarce": 2,
+          "Anartia jatrophae": 1,
+          "Ancyloxypha numitor": 1,
+          "Apodemia mormo": 1,
+          "Argynnis cybele": 3,
+          "Argynnis edwardsii": 1,
+          "Asterocampa celtis": 1,
+          "Atalopedes huron": 1,
+          "Azanus ubaldus": 1,
+          "Battus philenor": 1,
+          "Battus philenor hirsuta": 3,
+          "Boloria chariclea": 1,
+          "Boloria chariclea montinus": 1,
+          "Brephidium exilis": 1,
+          "Burnsius communis": 1,
+          "Callophrys gryneus siva": 1,
+          "Callophrys irus": 1,
+          "Callophrys mossii bayensis": 1,
+          "Cecropterus pylades": 1,
+          "Celastrina echo": 1,
+          "Cercyonis pegala": 1,
+          "Chlosyne harrisii": 1,
+          "Chlosyne hoffmanni": 1,
+          "Chlosyne palla": 1,
+          "Coenonympha california": 1,
+          "Coenonympha california california": 5,
+          "Colias": 1,
+          "Colias crocea": 1,
+          "Colias eurytheme": 6,
+          "Danaus plexippus": 6,
+          "Dione glycera": 1,
+          "Dione vanillae": 3,
+          "Epargyreus clarus": 2,
+          "Eresia nauplius": 1,
+          "Erynnis meridianus": 1,
+          "Erynnis propertius": 1,
+          "Euphydryas chalcedona": 1,
+          "Euphyes vestris": 1,
+          "Euploea core": 1,
+          "Euptoieta claudia": 1,
+          "Euptychiina": 1,
+          "Eurema hecabe": 1,
+          "Everes comyntas": 1,
+          "Glaucopsyche lygdamus": 1,
+          "Haetera piera": 1,
+          "Heliconius charithonia": 1,
+          "Heliconius charithonia vazquezae": 1,
+          "Hemiargus ceraunus": 1,
+          "Heraclides": 1,
+          "Heraclides rumiko": 1,
+          "Hesperiini": 1,
+          "Hylephila phyleus": 1,
+          "Icaricia acmon": 1,
+          "Icaricia icarioides": 1,
+          "Icaricia icarioides missionensis": 1,
+          "Junonia almana": 1,
+          "Junonia coenia": 2,
+          "Junonia goudotii": 1,
+          "Junonia grisea": 3,
+          "Lasiommata megera": 1,
+          "Leptotes plinius": 2,
+          "Lethe anthedon": 1,
+          "Limenitis archippus": 1,
+          "Limenitis arthemis": 1,
+          "Limenitis lorquini": 2,
+          "Limenitis weidemeyerii": 1,
+          "Lon melane": 2,
+          "Lycaena": 1,
+          "Lycaena boldenarum": 1,
+          "Lycaenidae": 1,
+          "Megisto cymela": 2,
+          "Melanitis leda": 1,
+          "Neptis clinia": 1,
+          "Neptis hylas": 1,
+          "Nymphalis antiopa": 1,
+          "Ochlodes agricola": 1,
+          "Ochlodes sylvanoides": 1,
+          "Oeneis jutta": 2,
+          "Panoquina ocola": 1,
+          "Pantoporia paraka": 1,
+          "Papilio demoleus": 1,
+          "Papilio eurymedon": 1,
+          "Papilio glaucus": 2,
+          "Papilio multicaudata": 2,
+          "Papilio polytes": 1,
+          "Papilio polyxenes": 1,
+          "Papilio polyxenes asterius": 1,
+          "Parnassius clodius": 1,
+          "Parthenos sylvia": 1,
+          "Pedaliodes palaepolis": 1,
+          "Phoebis sennae": 2,
+          "Phyciodes": 1,
+          "Phyciodes mylitta": 2,
+          "Phyciodes phaon": 1,
+          "Phyciodes pulchella": 5,
+          "Pieridae": 1,
+          "Pieris napi": 1,
+          "Pieris rapae": 5,
+          "Plebejus melissa": 1,
+          "Polites peckius": 1,
+          "Polygonia comma": 1,
+          "Polygonia gracilis zephyrus": 1,
+          "Polyommatus icarus": 1,
+          "Pontia protodice": 1,
+          "Precis eurodoce": 1,
+          "Protogoniomorpha duprei": 1,
+          "Ragadia makuta": 1,
+          "Rapala pheretima": 1,
+          "Sarangesa dasahara": 1,
+          "Satyrium titus": 1,
+          "Strymon melinus": 3,
+          "Systasea zampa": 1,
+          "Tagiades litigiosa": 1,
+          "Tarucus balkanica": 1,
+          "Tekliades ramanatek ramanatek": 1,
+          "Thymelicus lineola": 2,
+          "Vanessa annabella": 3,
+          "Vanessa atalanta": 3,
+          "Vanessa atalanta rubria": 2,
+          "Vanessa cardui": 3,
+          "Vanessa virginiensis": 4,
+          "Ypthima horsfieldii": 1,
+          "Zizeeria karsandra": 1
+        },
+        "unique_observers": 19,
+        "observation_created_year": {
+          "2015": 65,
+          "2014": 67,
+          "2013": 49
+        }
+      },
+      "caterpillar": {
+        "n": 9,
+        "portrait": 1,
+        "pixel_width": [
+          800.0,
+          979.2,
+          1527.0,
+          1741.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          600.0,
+          667.2,
+          1287.0,
+          1413.0,
+          1630.0,
+          1837.6,
+          2048.0
+        ],
+        "megapixels": [
+          0.48,
+          0.656,
+          2.158,
+          2.636,
+          3.146,
+          3.402,
+          3.656
+        ],
+        "aspect_ratio": [
+          0.75,
+          1.015,
+          1.147,
+          1.256,
+          1.497,
+          1.519,
+          1.591
+        ],
+        "luminance": [
+          104.878,
+          105.669,
+          116.734,
+          124.223,
+          126.156,
+          127.871,
+          133.886
+        ],
+        "contrast": [
+          35.699,
+          36.874,
+          42.42,
+          45.793,
+          51.629,
+          59.98,
+          71.386
+        ],
+        "saturation": [
+          0.189,
+          0.214,
+          0.24,
+          0.404,
+          0.497,
+          0.513,
+          0.529
+        ],
+        "detail": [
+          7.105,
+          7.337,
+          7.552,
+          7.581,
+          7.833,
+          8.249,
+          8.318
+        ],
+        "source_observations_with_metadata": 9,
+        "quality_grade": {
+          "research": 7,
+          "needs_id": 2
+        },
+        "source_taxa": {
+          "Aglais milberti": 1,
+          "Danaus plexippus": 1,
+          "Lepidoptera": 2,
+          "Malacosoma disstria": 1,
+          "Orgyia vetusta": 1,
+          "Uresiphita reversalis": 1,
+          "Vanessa cardui": 1,
+          "Xylophanes falco": 1
+        },
+        "unique_observers": 5,
+        "observation_created_year": {
+          "2013": 4,
+          "2015": 1,
+          "2014": 2,
+          "2016": 1,
+          "2012": 1
+        }
+      },
+      "hymenoptera": {
+        "n": 50,
+        "portrait": 8,
+        "pixel_width": [
+          426.0,
+          718.2,
+          1030.0,
+          1519.5,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          411.0,
+          639.3,
+          900.25,
+          1365.0,
+          1409.25,
+          1803.2,
+          2048.0
+        ],
+        "megapixels": [
+          0.226,
+          0.485,
+          0.933,
+          2.432,
+          2.796,
+          3.133,
+          3.762
+        ],
+        "aspect_ratio": [
+          0.562,
+          0.75,
+          1.117,
+          1.333,
+          1.499,
+          1.5,
+          1.5
+        ],
+        "luminance": [
+          35.615,
+          82.498,
+          102.197,
+          119.676,
+          132.379,
+          142.857,
+          171.907
+        ],
+        "contrast": [
+          29.995,
+          34.979,
+          40.87,
+          46.016,
+          53.889,
+          62.016,
+          78.262
+        ],
+        "saturation": [
+          0.055,
+          0.177,
+          0.286,
+          0.369,
+          0.531,
+          0.611,
+          0.909
+        ],
+        "detail": [
+          6.602,
+          7.336,
+          7.526,
+          7.962,
+          8.377,
+          8.919,
+          9.589
+        ],
+        "source_observations_with_metadata": 50,
+        "quality_grade": {
+          "needs_id": 11,
+          "research": 39
+        },
+        "source_taxa": {
+          "Agelaia": 1,
+          "Andrena": 2,
+          "Andrena nigerrima": 1,
+          "Anthophora pacifica": 1,
+          "Apis mellifera": 6,
+          "Atrusca capronae": 1,
+          "Bombus": 1,
+          "Bombus bimaculatus": 1,
+          "Bombus fervidus": 1,
+          "Bombus fraternus": 1,
+          "Bombus huntii": 1,
+          "Bombus impatiens": 3,
+          "Bombus melanopygus": 1,
+          "Bombus ternarius": 1,
+          "Bombus terricola": 1,
+          "Bombus vosnesenskii": 1,
+          "Camponotus pennsylvanicus": 1,
+          "Dianthidium concinnum": 1,
+          "Dolichovespula arctica": 1,
+          "Euodynerus": 1,
+          "Formica fusca": 1,
+          "Mischocyttarus basimacula": 1,
+          "Nematinae": 1,
+          "Nomia westwoodi": 1,
+          "Pseudomyrmex": 1,
+          "Pyrobombus": 2,
+          "Scolia bicincta": 1,
+          "Scolia dubia dubia": 1,
+          "Solenopsis molesta": 1,
+          "Sphex ichneumoneus": 1,
+          "Sphex pensylvanicus": 2,
+          "Tapinoma sessile": 1,
+          "Tenthredo": 1,
+          "Tetramorium caespitum": 1,
+          "Veromessor andrei": 2,
+          "Vespula alascensis": 1,
+          "Vespula maculifrons": 2,
+          "Xylocopa virginica": 1
+        },
+        "unique_observers": 6,
+        "observation_created_year": {
+          "2013": 30,
+          "2014": 8,
+          "2015": 6,
+          "2012": 2,
+          "2011": 4
+        }
+      },
+      "moth": {
+        "n": 10,
+        "portrait": 0,
+        "pixel_width": [
+          640.0,
+          640.0,
+          900.0,
+          1376.0,
+          1995.75,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          480.0,
+          480.0,
+          624.0,
+          1155.0,
+          1332.75,
+          1385.4,
+          1569.0
+        ],
+        "megapixels": [
+          0.307,
+          0.307,
+          0.589,
+          1.595,
+          2.665,
+          2.837,
+          3.213
+        ],
+        "aspect_ratio": [
+          1.172,
+          1.209,
+          1.312,
+          1.333,
+          1.497,
+          1.501,
+          1.504
+        ],
+        "luminance": [
+          73.589,
+          102.383,
+          105.781,
+          117.937,
+          128.737,
+          160.926,
+          176.127
+        ],
+        "contrast": [
+          14.639,
+          25.491,
+          32.086,
+          38.123,
+          48.249,
+          52.073,
+          61.927
+        ],
+        "saturation": [
+          0.038,
+          0.069,
+          0.338,
+          0.448,
+          0.547,
+          0.682,
+          0.759
+        ],
+        "detail": [
+          5.547,
+          6.83,
+          7.335,
+          7.616,
+          8.206,
+          8.43,
+          9.187
+        ],
+        "source_observations_with_metadata": 10,
+        "quality_grade": {
+          "research": 9,
+          "needs_id": 1
+        },
+        "source_taxa": {
+          "Antheraea polyphemus": 1,
+          "Callosamia promethea": 1,
+          "Campaea perlata": 1,
+          "Chiasmia clathrata": 1,
+          "Eacles imperialis": 1,
+          "Macaria pustularia": 1,
+          "Nyctemera adversata": 1,
+          "Rhodochlora brunneipalpis": 1,
+          "Saturnia pavonia": 1,
+          "Synchlora aerata": 1
+        },
+        "unique_observers": 7,
+        "observation_created_year": {
+          "2014": 1,
+          "2012": 4,
+          "2013": 5
+        }
+      },
+      "plant": {
+        "n": 100,
+        "portrait": 31,
+        "pixel_width": [
+          1000.0,
+          1365.0,
+          1500.0,
+          1500.0,
+          1530.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          683.0,
+          1000.0,
+          1000.0,
+          1365.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.699,
+          1.5,
+          1.5,
+          1.5,
+          2.796,
+          3.133,
+          3.146
+        ],
+        "aspect_ratio": [
+          0.667,
+          0.667,
+          0.747,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "luminance": [
+          58.811,
+          89.358,
+          102.802,
+          119.658,
+          132.382,
+          139.192,
+          162.939
+        ],
+        "contrast": [
+          23.764,
+          31.994,
+          35.521,
+          41.958,
+          48.354,
+          57.677,
+          67.591
+        ],
+        "saturation": [
+          0.053,
+          0.134,
+          0.179,
+          0.251,
+          0.371,
+          0.489,
+          0.639
+        ],
+        "detail": [
+          6.507,
+          7.553,
+          7.897,
+          8.32,
+          8.685,
+          8.902,
+          9.434
+        ],
+        "source_observations_with_metadata": 100,
+        "quality_grade": {
+          "research": 88,
+          "needs_id": 11,
+          "casual": 1
+        },
+        "source_taxa": {
+          "Acaena pinnatifida californica": 1,
+          "Adenostoma fasciculatum": 1,
+          "Anaphalis margaritacea": 1,
+          "Anticlea elegans": 1,
+          "Arceuthobium campylopodum": 1,
+          "Arctostaphylos imbricata": 2,
+          "Arctostaphylos manzanita": 1,
+          "Armeria maritima californica": 1,
+          "Artemisia californica": 2,
+          "Artemisia pycnocephala": 1,
+          "Arundo donax": 2,
+          "Astereae": 1,
+          "Baccharis pilularis": 1,
+          "Briza maxima": 1,
+          "Calochortus pulchellus": 1,
+          "Caltha leptosepala": 1,
+          "Calycanthus occidentalis": 1,
+          "Castilleja miniata": 1,
+          "Ceanothus foliosus foliosus": 1,
+          "Ceanothus thyrsiflorus": 2,
+          "Cercis canadensis": 1,
+          "Cirsium vulgare": 1,
+          "Clarkia unguiculata": 1,
+          "Clinopodium douglasii": 1,
+          "Cornus sericea occidentalis": 1,
+          "Cotoneaster franchetii": 1,
+          "Cotoneaster pannosus": 1,
+          "Diplacus aurantiacus": 3,
+          "Dirca occidentalis": 1,
+          "Dudleya farinosa": 1,
+          "Epilobium canum": 1,
+          "Erigeron canadensis": 1,
+          "Eriophyllum staechadifolium": 1,
+          "Erodium moschatum": 1,
+          "Erythronium helenae": 1,
+          "Eschscholzia californica": 1,
+          "Eucalyptus polyanthemos": 1,
+          "Frangula californica": 1,
+          "Fumaria capreolata": 1,
+          "Grindelia hirsutula": 1,
+          "Helenium amarum": 1,
+          "Hesperocyparis macrocarpa": 1,
+          "Hirschfeldia incana": 1,
+          "Horkelia": 1,
+          "Iris douglasiana": 1,
+          "Jaumea carnosa": 1,
+          "Lepechinia calycina": 1,
+          "Lessingia hololeuca": 1,
+          "Linum bienne": 1,
+          "Lupinus": 1,
+          "Lysimachia monelli": 1,
+          "Mikania scandens": 1,
+          "Navarretia squarrosa": 1,
+          "Notholithocarpus densiflorus": 1,
+          "Opuntia": 1,
+          "Palafoxia callosa": 1,
+          "Pentagramma triangularis": 1,
+          "Picea sitchensis": 1,
+          "Pickeringia montana": 1,
+          "Plantago lanceolata": 1,
+          "Polypodium californicum": 2,
+          "Polystichum munitum": 2,
+          "Primula parryi": 1,
+          "Primula suffrutescens": 1,
+          "Pseudotsuga menziesii": 1,
+          "Pulsatilla occidentalis": 1,
+          "Pyrola": 1,
+          "Quercus lobata": 1,
+          "Quercus nigra": 1,
+          "Quercus phellos": 1,
+          "Ranunculaceae": 1,
+          "Ribes menziesii": 1,
+          "Rubus armeniacus": 2,
+          "Rubus ursinus": 1,
+          "Rumex acetosella": 1,
+          "Salix": 1,
+          "Sanicula bipinnatifida": 1,
+          "Sequoia sempervirens": 1,
+          "Sherardia arvensis": 1,
+          "Silene virginica": 1,
+          "Silybum marianum": 1,
+          "Sisymbrium orientale": 1,
+          "Solanum elaeagnifolium": 1,
+          "Staehelina dubia": 1,
+          "Symphyotrichum chilense": 1,
+          "Taraxia ovata": 1,
+          "Toxicodendron diversilobum": 1,
+          "Toxicodendron radicans": 1,
+          "Trifolium oliganthum": 1,
+          "Trillium chloropetalum": 1,
+          "Vaccinium ovatum": 1
+        },
+        "unique_observers": 2,
+        "observation_created_year": {
+          "2010": 57,
+          "2011": 43
+        }
+      }
+    }
+  },
+  "reserve": {
+    "total": {
+      "n": 200,
+      "portrait": 56,
+      "pixel_width": [
+        354.0,
+        640.0,
+        864.75,
+        1409.5,
+        2048.0,
+        2048.0,
+        2048.0
+      ],
+      "pixel_height": [
+        300.0,
+        532.0,
+        861.0,
+        1200.0,
+        1530.0,
+        2048.0,
+        2048.0
+      ],
+      "megapixels": [
+        0.12,
+        0.423,
+        0.735,
+        1.92,
+        2.796,
+        3.146,
+        4.194
+      ],
+      "aspect_ratio": [
+        0.562,
+        0.75,
+        0.944,
+        1.333,
+        1.404,
+        1.5,
+        1.923
+      ],
+      "luminance": [
+        20.805,
+        82.21,
+        101.294,
+        128.584,
+        148.388,
+        172.579,
+        232.455
+      ],
+      "contrast": [
+        8.784,
+        27.99,
+        37.383,
+        45.817,
+        56.764,
+        64.359,
+        83.964
+      ],
+      "saturation": [
+        0.014,
+        0.063,
+        0.137,
+        0.293,
+        0.425,
+        0.588,
+        0.892
+      ],
+      "detail": [
+        4.952,
+        6.761,
+        7.274,
+        7.814,
+        8.4,
+        8.88,
+        9.584
+      ]
+    },
+    "groups": {
+      "beetle": {
+        "n": 5,
+        "portrait": 1,
+        "pixel_width": [
+          568.0,
+          820.8,
+          1200.0,
+          1453.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          426.0,
+          615.6,
+          900.0,
+          1366.0,
+          1669.0,
+          1896.4,
+          2048.0
+        ],
+        "megapixels": [
+          0.242,
+          0.577,
+          1.08,
+          2.798,
+          2.976,
+          3.241,
+          3.418
+        ],
+        "aspect_ratio": [
+          0.709,
+          0.917,
+          1.227,
+          1.333,
+          1.333,
+          1.433,
+          1.499
+        ],
+        "luminance": [
+          37.249,
+          64.975,
+          106.562,
+          164.379,
+          164.42,
+          198.505,
+          221.228
+        ],
+        "contrast": [
+          35.571,
+          37.035,
+          39.231,
+          43.636,
+          65.324,
+          66.182,
+          66.754
+        ],
+        "saturation": [
+          0.067,
+          0.119,
+          0.196,
+          0.342,
+          0.468,
+          0.524,
+          0.562
+        ],
+        "detail": [
+          7.412,
+          7.486,
+          7.598,
+          7.795,
+          8.071,
+          8.206,
+          8.295
+        ],
+        "source_observations_with_metadata": 5,
+        "quality_grade": {
+          "research": 3,
+          "needs_id": 2
+        },
+        "source_taxa": {
+          "Adalia bipunctata": 1,
+          "Isomira": 1,
+          "Polyphylla decemlineata": 1,
+          "Scarabaeidae": 1,
+          "Typocerus velutinus": 1
+        },
+        "unique_observers": 5,
+        "observation_created_year": {
+          "2014": 3,
+          "2015": 1,
+          "2013": 1
+        }
+      },
+      "butterfly": {
+        "n": 42,
+        "portrait": 14,
+        "pixel_width": [
+          354.0,
+          457.5,
+          891.75,
+          1152.0,
+          2004.25,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          336.0,
+          469.2,
+          733.0,
+          1152.0,
+          1536.0,
+          2048.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.151,
+          0.211,
+          0.705,
+          1.679,
+          2.412,
+          3.146,
+          3.752
+        ],
+        "aspect_ratio": [
+          0.562,
+          0.673,
+          0.943,
+          1.166,
+          1.333,
+          1.699,
+          1.778
+        ],
+        "luminance": [
+          22.404,
+          87.065,
+          94.46,
+          115.499,
+          134.346,
+          158.479,
+          187.277
+        ],
+        "contrast": [
+          33.045,
+          37.602,
+          44.799,
+          51.108,
+          59.369,
+          65.492,
+          76.209
+        ],
+        "saturation": [
+          0.078,
+          0.175,
+          0.296,
+          0.406,
+          0.519,
+          0.622,
+          0.836
+        ],
+        "detail": [
+          6.54,
+          7.677,
+          7.922,
+          8.446,
+          8.842,
+          9.078,
+          9.584
+        ],
+        "source_observations_with_metadata": 42,
+        "quality_grade": {
+          "needs_id": 4,
+          "research": 37,
+          "casual": 1
+        },
+        "source_taxa": {
+          "Burnsius communis": 1,
+          "Celastrina lucia": 1,
+          "Cercyonis pegala": 1,
+          "Cyllopsis gemma": 1,
+          "Cyllopsis pertepida": 1,
+          "Danaus plexippus": 5,
+          "Dione vanillae": 3,
+          "Euphydryas chalcedona": 1,
+          "Euptoieta claudia": 1,
+          "Everes comyntas": 1,
+          "Hypolycaena kina": 1,
+          "Icaricia acmon": 1,
+          "Junonia rhadama": 1,
+          "Lycaena": 1,
+          "Ochlodes sylvanoides": 1,
+          "Papilio polyxenes": 1,
+          "Papilio zelicaon": 1,
+          "Pareuptychia ocirrhoe": 1,
+          "Phoebis sennae": 1,
+          "Phyciodes mylitta": 1,
+          "Phyciodes tharos": 1,
+          "Poanes": 1,
+          "Polygonia progne": 1,
+          "Polygonia satyrus": 1,
+          "Spicauda procne": 1,
+          "Strymon melinus": 1,
+          "Thymelicus lineola": 1,
+          "Tirumala limniace": 1,
+          "Udara blackburni": 1,
+          "Vanessa atalanta": 1,
+          "Vanessa cardui": 4,
+          "Vanessa gonerilla gonerilla": 1,
+          "Vanessa itea": 1
+        },
+        "unique_observers": 28,
+        "observation_created_year": {
+          "2015": 21,
+          "2013": 7,
+          "2014": 14
+        }
+      },
+      "caterpillar": {
+        "n": 16,
+        "portrait": 9,
+        "pixel_width": [
+          426.0,
+          758.5,
+          1113.0,
+          1536.0,
+          1664.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          534.0,
+          734.0,
+          959.75,
+          1536.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.242,
+          0.558,
+          1.052,
+          2.971,
+          3.146,
+          3.146,
+          3.965
+        ],
+        "aspect_ratio": [
+          0.667,
+          0.748,
+          0.75,
+          0.75,
+          1.333,
+          1.416,
+          1.5
+        ],
+        "luminance": [
+          27.926,
+          86.393,
+          96.763,
+          124.132,
+          134.186,
+          154.251,
+          165.519
+        ],
+        "contrast": [
+          20.216,
+          27.938,
+          41.439,
+          46.553,
+          51.7,
+          56.084,
+          65.958
+        ],
+        "saturation": [
+          0.044,
+          0.108,
+          0.182,
+          0.314,
+          0.436,
+          0.601,
+          0.711
+        ],
+        "detail": [
+          6.619,
+          6.814,
+          7.085,
+          7.531,
+          8.018,
+          8.866,
+          9.417
+        ],
+        "source_observations_with_metadata": 16,
+        "quality_grade": {
+          "research": 13,
+          "needs_id": 3
+        },
+        "source_taxa": {
+          "Apatelodes torrefacta": 1,
+          "Arctiinae": 1,
+          "Callophrys henrici": 1,
+          "Calyptra canadensis": 1,
+          "Chlosyne coronado pariaensis": 1,
+          "Danaus chrysippus orientis": 1,
+          "Danaus plexippus": 1,
+          "Euthrix potatoria": 1,
+          "Geometridae": 1,
+          "Lepidoptera": 1,
+          "Nymphalis antiopa": 1,
+          "Pachliopta aristolochiae interpositus": 1,
+          "Papilio polyxenes asterius": 1,
+          "Papilio rutulus": 1,
+          "Papilio troilus": 1,
+          "Pieris rapae": 1
+        },
+        "unique_observers": 16,
+        "observation_created_year": {
+          "2011": 1,
+          "2013": 2,
+          "2018": 4,
+          "2015": 2,
+          "2012": 1,
+          "2014": 3,
+          "2016": 2,
+          "2017": 1
+        }
+      },
+      "dragonfly": {
+        "n": 12,
+        "portrait": 2,
+        "pixel_width": [
+          684.0,
+          1210.4,
+          1451.0,
+          1620.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          900.0,
+          936.7,
+          1156.0,
+          1394.5,
+          1550.25,
+          1604.7,
+          1753.0
+        ],
+        "megapixels": [
+          0.7,
+          1.093,
+          1.742,
+          2.466,
+          3.029,
+          3.251,
+          3.289
+        ],
+        "aspect_ratio": [
+          0.668,
+          0.947,
+          1.22,
+          1.333,
+          1.351,
+          1.406,
+          1.5
+        ],
+        "luminance": [
+          94.014,
+          102.772,
+          110.081,
+          125.556,
+          130.614,
+          137.3,
+          212.655
+        ],
+        "contrast": [
+          24.801,
+          28.6,
+          34.489,
+          42.808,
+          47.412,
+          59.293,
+          63.526
+        ],
+        "saturation": [
+          0.062,
+          0.217,
+          0.356,
+          0.394,
+          0.52,
+          0.646,
+          0.662
+        ],
+        "detail": [
+          6.374,
+          6.855,
+          7.171,
+          8.091,
+          8.555,
+          9.053,
+          9.231
+        ],
+        "source_observations_with_metadata": 12,
+        "quality_grade": {
+          "research": 12
+        },
+        "source_taxa": {
+          "Aeshna umbrosa": 1,
+          "Anax indicus": 1,
+          "Anax junius": 1,
+          "Chalcostephia flavifrons": 1,
+          "Enallagma cyathigerum": 1,
+          "Hetaerina americana": 1,
+          "Libellula forensis": 1,
+          "Libellula luctuosa": 1,
+          "Libellula saturata": 1,
+          "Pachydiplax longipennis": 1,
+          "Plathemis lydia": 1,
+          "Sympetrum striolatum": 1
+        },
+        "unique_observers": 9,
+        "observation_created_year": {
+          "2014": 1,
+          "2012": 7,
+          "2015": 1,
+          "2011": 1,
+          "2016": 2
+        }
+      },
+      "fly": {
+        "n": 12,
+        "portrait": 2,
+        "pixel_width": [
+          360.0,
+          447.4,
+          881.5,
+          1160.5,
+          1275.0,
+          1993.2,
+          2048.0
+        ],
+        "pixel_height": [
+          300.0,
+          497.5,
+          725.5,
+          846.5,
+          1195.5,
+          1626.6,
+          2048.0
+        ],
+        "megapixels": [
+          0.12,
+          0.213,
+          0.658,
+          1.003,
+          1.913,
+          2.547,
+          3.416
+        ],
+        "aspect_ratio": [
+          0.562,
+          0.785,
+          1.153,
+          1.252,
+          1.334,
+          1.506,
+          1.633
+        ],
+        "luminance": [
+          74.606,
+          81.074,
+          110.871,
+          126.078,
+          130.642,
+          132.3,
+          205.513
+        ],
+        "contrast": [
+          32.591,
+          35.454,
+          42.807,
+          51.018,
+          57.033,
+          64.035,
+          69.04
+        ],
+        "saturation": [
+          0.064,
+          0.089,
+          0.247,
+          0.312,
+          0.544,
+          0.606,
+          0.686
+        ],
+        "detail": [
+          5.337,
+          7.268,
+          7.506,
+          8.015,
+          8.407,
+          9.143,
+          9.377
+        ],
+        "source_observations_with_metadata": 12,
+        "quality_grade": {
+          "needs_id": 6,
+          "research": 6
+        },
+        "source_taxa": {
+          "Efferia": 1,
+          "Eupeodes fumipennis": 1,
+          "Eurosta solidaginis": 1,
+          "Holotanypus": 1,
+          "Laphria thoracica": 1,
+          "Milesia virginiensis": 1,
+          "Promachus hinei": 1,
+          "Sarcophaginae": 1,
+          "Tachininae": 1,
+          "Tipula": 1,
+          "Tipulomorpha": 1,
+          "Villa": 1
+        },
+        "unique_observers": 10,
+        "observation_created_year": {
+          "2012": 3,
+          "2016": 4,
+          "2013": 3,
+          "2011": 2
+        }
+      },
+      "hymenoptera": {
+        "n": 5,
+        "portrait": 1,
+        "pixel_width": [
+          720.0,
+          912.0,
+          1200.0,
+          2048.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          900.0,
+          924.0,
+          960.0,
+          1365.0,
+          1410.0,
+          1743.0,
+          1965.0
+        ],
+        "megapixels": [
+          0.691,
+          0.847,
+          1.08,
+          2.796,
+          2.888,
+          3.57,
+          4.024
+        ],
+        "aspect_ratio": [
+          0.75,
+          0.867,
+          1.042,
+          1.333,
+          1.452,
+          1.481,
+          1.5
+        ],
+        "luminance": [
+          72.553,
+          73.739,
+          75.52,
+          91.187,
+          98.706,
+          131.217,
+          152.891
+        ],
+        "contrast": [
+          38.304,
+          43.648,
+          51.663,
+          54.185,
+          61.488,
+          69.312,
+          74.528
+        ],
+        "saturation": [
+          0.218,
+          0.22,
+          0.223,
+          0.303,
+          0.327,
+          0.35,
+          0.365
+        ],
+        "detail": [
+          6.883,
+          7.263,
+          7.835,
+          7.867,
+          7.89,
+          8.241,
+          8.476
+        ],
+        "source_observations_with_metadata": 5,
+        "quality_grade": {
+          "needs_id": 1,
+          "casual": 1,
+          "research": 3
+        },
+        "source_taxa": {
+          "Acunomia": 1,
+          "Andrena commoda": 1,
+          "Bombus huntii": 1,
+          "Prenolepis imparis": 1,
+          "Sphex ichneumoneus": 1
+        },
+        "unique_observers": 3,
+        "observation_created_year": {
+          "2013": 5
+        }
+      },
+      "mantis": {
+        "n": 4,
+        "portrait": 1,
+        "pixel_width": [
+          1000.0,
+          1007.2,
+          1018.0,
+          1088.0,
+          1376.0,
+          1779.2,
+          2048.0
+        ],
+        "pixel_height": [
+          682.0,
+          736.6,
+          818.5,
+          1099.0,
+          1339.0,
+          1348.0,
+          1354.0
+        ],
+        "megapixels": [
+          0.698,
+          0.787,
+          0.921,
+          1.165,
+          1.694,
+          2.341,
+          2.773
+        ],
+        "aspect_ratio": [
+          0.75,
+          0.925,
+          1.187,
+          1.417,
+          1.504,
+          1.509,
+          1.513
+        ],
+        "luminance": [
+          63.146,
+          65.73,
+          69.606,
+          90.949,
+          123.992,
+          148.926,
+          165.548
+        ],
+        "contrast": [
+          42.155,
+          46.53,
+          53.092,
+          59.82,
+          64.966,
+          68.68,
+          71.156
+        ],
+        "saturation": [
+          0.069,
+          0.125,
+          0.209,
+          0.32,
+          0.42,
+          0.487,
+          0.532
+        ],
+        "detail": [
+          7.289,
+          7.386,
+          7.531,
+          7.851,
+          8.206,
+          8.416,
+          8.555
+        ],
+        "source_observations_with_metadata": 4,
+        "quality_grade": {
+          "research": 3,
+          "needs_id": 1
+        },
+        "source_taxa": {
+          "Mantis religiosa": 1,
+          "Mantodea": 1,
+          "Phyllocrania paradoxa": 1,
+          "Stagmomantis carolina": 1
+        },
+        "unique_observers": 4,
+        "observation_created_year": {
+          "2015": 1,
+          "2016": 1,
+          "2014": 1,
+          "2013": 1
+        }
+      },
+      "moth": {
+        "n": 70,
+        "portrait": 14,
+        "pixel_width": [
+          360.0,
+          640.0,
+          800.0,
+          1390.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          384.0,
+          532.0,
+          800.0,
+          1200.0,
+          1365.0,
+          1536.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.173,
+          0.426,
+          0.553,
+          1.907,
+          2.796,
+          2.796,
+          4.143
+        ],
+        "aspect_ratio": [
+          0.667,
+          0.75,
+          1.066,
+          1.333,
+          1.5,
+          1.501,
+          1.695
+        ],
+        "luminance": [
+          20.805,
+          83.511,
+          112.578,
+          143.09,
+          161.463,
+          184.972,
+          232.455
+        ],
+        "contrast": [
+          8.784,
+          25.306,
+          32.752,
+          42.758,
+          52.919,
+          64.124,
+          83.964
+        ],
+        "saturation": [
+          0.014,
+          0.042,
+          0.073,
+          0.137,
+          0.362,
+          0.57,
+          0.892
+        ],
+        "detail": [
+          4.952,
+          6.301,
+          6.99,
+          7.479,
+          7.904,
+          8.327,
+          9.459
+        ],
+        "source_observations_with_metadata": 70,
+        "quality_grade": {
+          "research": 50,
+          "needs_id": 20
+        },
+        "source_taxa": {
+          "Acronicta marmorata": 1,
+          "Acropteris iphiata": 1,
+          "Actias luna": 1,
+          "Agrius cingulata": 1,
+          "Ambulyx substrigilis": 1,
+          "Amorpha juglandis": 1,
+          "Anavitrinella pampinaria": 1,
+          "Anopina triangulana": 1,
+          "Antitype chi": 1,
+          "Apantesis": 1,
+          "Arna bipunctapex": 1,
+          "Blastobasidae": 1,
+          "Boarmiini": 1,
+          "Catocala ilia": 1,
+          "Catocala verrilliana": 1,
+          "Ceratomia hageni": 1,
+          "Choristoneura fumiferana": 1,
+          "Choristoneura parallela": 1,
+          "Cisseps fulvicollis": 1,
+          "Cladara atroliturata": 1,
+          "Coelodasys unicornis": 1,
+          "Coloradia pandora": 1,
+          "Cosmia calami": 1,
+          "Dasychira plagiata": 1,
+          "Dichromia quadralis": 1,
+          "Emmelina monodactyla": 1,
+          "Epiphyas postvittana": 1,
+          "Estigmene acrea": 1,
+          "Euclidiini": 1,
+          "Gelechioidea": 1,
+          "Geometridae": 1,
+          "Haploa confusa": 1,
+          "Hemaris diffinis": 1,
+          "Herminiinae": 1,
+          "Hyalophora euryalus": 1,
+          "Hypena laceratalis": 1,
+          "Korscheltellus fusconebulosa": 1,
+          "Lacinipolia renigera": 1,
+          "Laothoe populi": 1,
+          "Lasiocampa quercus": 1,
+          "Lymantria mathura": 1,
+          "Miltochrista undulosa": 1,
+          "Nematocampa brehmeata": 1,
+          "Noctuidae": 1,
+          "Noctuinae": 1,
+          "Ochropleura implecta": 1,
+          "Odontopera bidentata": 1,
+          "Oeonistis altica": 1,
+          "Oligia fasciuncula": 1,
+          "Palpita atrisquamalis": 1,
+          "Pantherodes": 1,
+          "Perisyntrocha ossealis": 1,
+          "Phyllodesma americana": 1,
+          "Platyptilia gonodactyla": 1,
+          "Plutella xylostella": 1,
+          "Prochoerodes lineola": 1,
+          "Pyraloidea": 1,
+          "Pyrausta subsequalis": 1,
+          "Rhagoba octomaculalis": 1,
+          "Rheumaptera": 1,
+          "Rheumaptera hastata": 1,
+          "Sabulodes aegrotata": 1,
+          "Spilosoma": 1,
+          "Spodoptera frugiperda": 1,
+          "Spodoptera praefica": 1,
+          "Tosale oviplagalis": 1,
+          "Trabala": 1,
+          "Tyria jacobaeae": 1,
+          "Xestia": 1,
+          "Zale": 1
+        },
+        "unique_observers": 11,
+        "observation_created_year": {
+          "2013": 38,
+          "2014": 10,
+          "2011": 7,
+          "2012": 10,
+          "2015": 5
+        }
+      },
+      "orthopteran": {
+        "n": 6,
+        "portrait": 1,
+        "pixel_width": [
+          360.0,
+          480.0,
+          897.0,
+          1918.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          312.0,
+          396.0,
+          648.0,
+          1330.0,
+          1529.0,
+          1536.0,
+          1536.0
+        ],
+        "megapixels": [
+          0.173,
+          0.18,
+          0.73,
+          2.528,
+          3.033,
+          3.146,
+          3.146
+        ],
+        "aspect_ratio": [
+          0.75,
+          0.968,
+          1.223,
+          1.333,
+          1.667,
+          1.85,
+          1.923
+        ],
+        "luminance": [
+          100.616,
+          102.822,
+          106.885,
+          118.604,
+          133.808,
+          148.01,
+          159.193
+        ],
+        "contrast": [
+          28.448,
+          34.949,
+          41.97,
+          43.868,
+          59.311,
+          68.799,
+          73.25
+        ],
+        "saturation": [
+          0.171,
+          0.216,
+          0.269,
+          0.339,
+          0.391,
+          0.431,
+          0.469
+        ],
+        "detail": [
+          7.507,
+          7.687,
+          7.895,
+          8.204,
+          8.456,
+          8.754,
+          9.041
+        ],
+        "source_observations_with_metadata": 6,
+        "quality_grade": {
+          "research": 5,
+          "needs_id": 1
+        },
+        "source_taxa": {
+          "Anacridium aegyptium": 1,
+          "Dactylotum bicolor": 1,
+          "Oedipoda caerulescens": 1,
+          "Omocestus viridulus": 1,
+          "Pseudochorthippus curtipennis": 1,
+          "Romalea microptera": 1
+        },
+        "unique_observers": 6,
+        "observation_created_year": {
+          "2013": 3,
+          "2016": 2,
+          "2012": 1
+        }
+      },
+      "plant": {
+        "n": 9,
+        "portrait": 5,
+        "pixel_width": [
+          768.0,
+          768.0,
+          768.0,
+          1530.0,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          1024.0,
+          1024.0,
+          1024.0,
+          1365.0,
+          1530.0,
+          1633.6,
+          2048.0
+        ],
+        "megapixels": [
+          0.786,
+          0.786,
+          0.786,
+          2.796,
+          3.133,
+          3.133,
+          3.133
+        ],
+        "aspect_ratio": [
+          0.747,
+          0.749,
+          0.75,
+          0.75,
+          1.339,
+          1.371,
+          1.5
+        ],
+        "luminance": [
+          86.958,
+          93.544,
+          98.512,
+          128.269,
+          131.587,
+          139.288,
+          165.282
+        ],
+        "contrast": [
+          24.109,
+          26.106,
+          36.716,
+          47.152,
+          54.112,
+          61.192,
+          62.946
+        ],
+        "saturation": [
+          0.191,
+          0.266,
+          0.305,
+          0.362,
+          0.389,
+          0.466,
+          0.754
+        ],
+        "detail": [
+          7.683,
+          8.008,
+          8.09,
+          8.397,
+          8.412,
+          9.211,
+          9.299
+        ],
+        "source_observations_with_metadata": 9,
+        "quality_grade": {
+          "research": 8,
+          "casual": 1
+        },
+        "source_taxa": {
+          "Diplacus aurantiacus": 1,
+          "Dipterostemon capitatus": 1,
+          "Galium boreale": 1,
+          "Lamium purpureum": 1,
+          "Lupinus albifrons albifrons": 1,
+          "Lupinus nanus": 1,
+          "Opuntia": 1,
+          "Plantago lanceolata": 1,
+          "Umbellularia californica": 1
+        },
+        "unique_observers": 2,
+        "observation_created_year": {
+          "2011": 9
+        }
+      },
+      "pupa": {
+        "n": 8,
+        "portrait": 3,
+        "pixel_width": [
+          827.0,
+          899.8,
+          1000.75,
+          1474.5,
+          1847.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          768.0,
+          852.0,
+          1086.0,
+          1295.5,
+          1918.25,
+          2048.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.786,
+          0.815,
+          0.937,
+          2.178,
+          3.194,
+          3.595,
+          4.194
+        ],
+        "aspect_ratio": [
+          0.702,
+          0.736,
+          0.899,
+          1.0,
+          1.12,
+          1.467,
+          1.778
+        ],
+        "luminance": [
+          101.331,
+          102.334,
+          104.152,
+          112.226,
+          127.951,
+          159.136,
+          227.49
+        ],
+        "contrast": [
+          38.812,
+          39.412,
+          41.326,
+          44.428,
+          48.579,
+          52.731,
+          56.603
+        ],
+        "saturation": [
+          0.063,
+          0.138,
+          0.2,
+          0.225,
+          0.268,
+          0.331,
+          0.375
+        ],
+        "detail": [
+          6.597,
+          6.628,
+          6.732,
+          7.68,
+          8.116,
+          8.36,
+          8.569
+        ],
+        "source_observations_with_metadata": 8,
+        "quality_grade": {
+          "research": 5,
+          "needs_id": 3
+        },
+        "source_taxa": {
+          "Acraea terpsicore": 1,
+          "Brassolini": 1,
+          "Danaus plexippus": 1,
+          "Dione vanillae": 1,
+          "Eumaeus atala": 1,
+          "Euphydryas chalcedona": 1,
+          "Papilionini": 1,
+          "Pieris rapae": 1
+        },
+        "unique_observers": 8,
+        "observation_created_year": {
+          "2020": 1,
+          "2017": 2,
+          "2016": 2,
+          "2021": 1,
+          "2018": 1,
+          "2019": 1
+        }
+      },
+      "spider": {
+        "n": 4,
+        "portrait": 0,
+        "pixel_width": [
+          960.0,
+          1172.7,
+          1491.75,
+          1858.5,
+          2048.0,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          720.0,
+          837.9,
+          1014.75,
+          1239.0,
+          1405.0,
+          1477.0,
+          1525.0
+        ],
+        "megapixels": [
+          0.691,
+          1.041,
+          1.566,
+          2.327,
+          2.877,
+          3.025,
+          3.123
+        ],
+        "aspect_ratio": [
+          1.333,
+          1.336,
+          1.341,
+          1.421,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "luminance": [
+          68.98,
+          77.02,
+          89.081,
+          116.904,
+          151.046,
+          174.482,
+          190.106
+        ],
+        "contrast": [
+          36.712,
+          37.722,
+          39.237,
+          42.515,
+          49.83,
+          58.612,
+          64.466
+        ],
+        "saturation": [
+          0.04,
+          0.052,
+          0.07,
+          0.129,
+          0.195,
+          0.223,
+          0.243
+        ],
+        "detail": [
+          6.321,
+          6.525,
+          6.83,
+          7.281,
+          7.839,
+          8.335,
+          8.666
+        ],
+        "source_observations_with_metadata": 4,
+        "quality_grade": {
+          "needs_id": 2,
+          "research": 2
+        },
+        "source_taxa": {
+          "Antrodiaetidae": 1,
+          "Latrodectus variolus": 1,
+          "Neoscona crucifera": 1,
+          "Trombidia": 1
+        },
+        "unique_observers": 4,
+        "observation_created_year": {
+          "2014": 1,
+          "2013": 1,
+          "2011": 1,
+          "2015": 1
+        }
+      },
+      "true_bug": {
+        "n": 7,
+        "portrait": 3,
+        "pixel_width": [
+          852.0,
+          1032.0,
+          1344.0,
+          1593.0,
+          1931.5,
+          2048.0,
+          2048.0
+        ],
+        "pixel_height": [
+          1136.0,
+          1273.4,
+          1378.0,
+          1406.0,
+          1792.0,
+          2048.0,
+          2048.0
+        ],
+        "megapixels": [
+          0.968,
+          1.717,
+          2.288,
+          2.552,
+          2.971,
+          3.146,
+          3.146
+        ],
+        "aspect_ratio": [
+          0.562,
+          0.675,
+          0.75,
+          1.145,
+          1.312,
+          1.4,
+          1.5
+        ],
+        "luminance": [
+          101.996,
+          107.209,
+          117.934,
+          131.071,
+          153.497,
+          178.144,
+          196.126
+        ],
+        "contrast": [
+          12.99,
+          20.053,
+          25.654,
+          26.62,
+          41.58,
+          48.212,
+          48.931
+        ],
+        "saturation": [
+          0.043,
+          0.102,
+          0.168,
+          0.213,
+          0.294,
+          0.373,
+          0.379
+        ],
+        "detail": [
+          5.782,
+          6.117,
+          6.399,
+          6.767,
+          7.569,
+          8.481,
+          9.506
+        ],
+        "source_observations_with_metadata": 7,
+        "quality_grade": {
+          "research": 5,
+          "needs_id": 2
+        },
+        "source_taxa": {
+          "Acanthocephala terminalis": 1,
+          "Cicadinae": 1,
+          "Gerris": 1,
+          "Largus californicus": 1,
+          "Lygus": 1,
+          "Neotibicen lyricen lyricen": 1,
+          "Proxys punctulatus": 1
+        },
+        "unique_observers": 7,
+        "observation_created_year": {
+          "2016": 3,
+          "2011": 2,
+          "2012": 1,
+          "2015": 1
+        }
+      }
+    }
+  }
+}

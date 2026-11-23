@@ -1,0 +1,7 @@
+.bbox-lesson { font: 15px/1.5 system-ui,sans-serif; max-width: 940px; }
+.bbox-picture { position: relative; width: fit-content; max-width: 100%; }
+.bbox-photo { display:block; width:auto; height:auto; max-width:100%; max-height:68vh; image-orientation:from-image; }
+.bbox-layer { position:absolute; inset:0; height:100%; width:100%; touch-action:none; cursor:crosshair; }
+.bbox-layer rect { fill:#29b69022; stroke:#00e0a8; stroke-width:2.5; vector-effect:non-scaling-stroke; }
+.bbox-controls { display:flex; flex-wrap:wrap; gap:7px; margin-top:9px; }
+.bbox-feedback { min-height:1.5em; font-weight:600; }

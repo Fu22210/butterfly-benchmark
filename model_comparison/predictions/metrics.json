@@ -1,0 +1,566 @@
+{
+  "dino": {
+    "seconds": 150.17111799214035,
+    "failed_attempts": 0,
+    "groups": {
+      "all": {
+        "0.5": {
+          "n": 400,
+          "tp": 189,
+          "fp": 256,
+          "fn": 4,
+          "precision": 0.4247191011235955,
+          "recall": 0.9792746113989638,
+          "f1": 0.5924764890282131,
+          "fp_on_empty": 249,
+          "empty_with_fp": 193,
+          "empty_images": 209
+        },
+        "0.75": {
+          "n": 400,
+          "tp": 172,
+          "fp": 273,
+          "fn": 21,
+          "precision": 0.3865168539325843,
+          "recall": 0.8911917098445595,
+          "f1": 0.5391849529780565,
+          "fp_on_empty": 249,
+          "empty_with_fp": 193,
+          "empty_images": 209
+        }
+      },
+      "beetle": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 55,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 55,
+          "empty_with_fp": 50,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 55,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 55,
+          "empty_with_fp": 50,
+          "empty_images": 50
+        }
+      },
+      "butterfly": {
+        "0.5": {
+          "n": 181,
+          "tp": 179,
+          "fp": 6,
+          "fn": 4,
+          "precision": 0.9675675675675676,
+          "recall": 0.9781420765027322,
+          "f1": 0.9728260869565217,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 181,
+          "tp": 162,
+          "fp": 23,
+          "fn": 21,
+          "precision": 0.8756756756756757,
+          "recall": 0.8852459016393442,
+          "f1": 0.8804347826086957,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "caterpillar": {
+        "0.5": {
+          "n": 9,
+          "tp": 0,
+          "fp": 9,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 9,
+          "empty_with_fp": 9,
+          "empty_images": 9
+        },
+        "0.75": {
+          "n": 9,
+          "tp": 0,
+          "fp": 9,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 9,
+          "empty_with_fp": 9,
+          "empty_images": 9
+        }
+      },
+      "hymenoptera": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 64,
+          "empty_with_fp": 50,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 64,
+          "empty_with_fp": 50,
+          "empty_images": 50
+        }
+      },
+      "moth": {
+        "0.5": {
+          "n": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 10,
+          "tp": 10,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "plant": {
+        "0.5": {
+          "n": 100,
+          "tp": 0,
+          "fp": 121,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 121,
+          "empty_with_fp": 84,
+          "empty_images": 100
+        },
+        "0.75": {
+          "n": 100,
+          "tp": 0,
+          "fp": 121,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 121,
+          "empty_with_fp": 84,
+          "empty_images": 100
+        }
+      }
+    }
+  },
+  "owl": {
+    "seconds": 468.14169677207246,
+    "failed_attempts": 0,
+    "groups": {
+      "all": {
+        "0.5": {
+          "n": 400,
+          "tp": 187,
+          "fp": 703,
+          "fn": 6,
+          "precision": 0.2101123595505618,
+          "recall": 0.9689119170984456,
+          "f1": 0.34533702677746997,
+          "fp_on_empty": 430,
+          "empty_with_fp": 153,
+          "empty_images": 209
+        },
+        "0.75": {
+          "n": 400,
+          "tp": 114,
+          "fp": 776,
+          "fn": 79,
+          "precision": 0.12808988764044943,
+          "recall": 0.5906735751295337,
+          "f1": 0.21052631578947367,
+          "fp_on_empty": 430,
+          "empty_with_fp": 153,
+          "empty_images": 209
+        }
+      },
+      "beetle": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 89,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 89,
+          "empty_with_fp": 47,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 89,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 89,
+          "empty_with_fp": 47,
+          "empty_images": 50
+        }
+      },
+      "butterfly": {
+        "0.5": {
+          "n": 181,
+          "tp": 177,
+          "fp": 264,
+          "fn": 6,
+          "precision": 0.4013605442176871,
+          "recall": 0.9672131147540983,
+          "f1": 0.5673076923076923,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 181,
+          "tp": 105,
+          "fp": 336,
+          "fn": 78,
+          "precision": 0.23809523809523808,
+          "recall": 0.5737704918032787,
+          "f1": 0.33653846153846156,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "caterpillar": {
+        "0.5": {
+          "n": 9,
+          "tp": 0,
+          "fp": 29,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 29,
+          "empty_with_fp": 9,
+          "empty_images": 9
+        },
+        "0.75": {
+          "n": 9,
+          "tp": 0,
+          "fp": 29,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 29,
+          "empty_with_fp": 9,
+          "empty_images": 9
+        }
+      },
+      "hymenoptera": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 154,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 154,
+          "empty_with_fp": 47,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 154,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 154,
+          "empty_with_fp": 47,
+          "empty_images": 50
+        }
+      },
+      "moth": {
+        "0.5": {
+          "n": 10,
+          "tp": 10,
+          "fp": 9,
+          "fn": 0,
+          "precision": 0.5263157894736842,
+          "recall": 1.0,
+          "f1": 0.6896551724137931,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 10,
+          "tp": 9,
+          "fp": 10,
+          "fn": 1,
+          "precision": 0.47368421052631576,
+          "recall": 0.9,
+          "f1": 0.6206896551724138,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "plant": {
+        "0.5": {
+          "n": 100,
+          "tp": 0,
+          "fp": 158,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 158,
+          "empty_with_fp": 50,
+          "empty_images": 100
+        },
+        "0.75": {
+          "n": 100,
+          "tp": 0,
+          "fp": 158,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 158,
+          "empty_with_fp": 50,
+          "empty_images": 100
+        }
+      }
+    }
+  },
+  "qwen": {
+    "seconds": 502.8628790404182,
+    "failed_attempts": 0,
+    "groups": {
+      "all": {
+        "0.5": {
+          "n": 400,
+          "tp": 191,
+          "fp": 143,
+          "fn": 2,
+          "precision": 0.5718562874251497,
+          "recall": 0.9896373056994818,
+          "f1": 0.7248576850094877,
+          "fp_on_empty": 143,
+          "empty_with_fp": 143,
+          "empty_images": 209
+        },
+        "0.75": {
+          "n": 400,
+          "tp": 173,
+          "fp": 161,
+          "fn": 20,
+          "precision": 0.5179640718562875,
+          "recall": 0.8963730569948186,
+          "f1": 0.6565464895635673,
+          "fp_on_empty": 143,
+          "empty_with_fp": 143,
+          "empty_images": 209
+        }
+      },
+      "beetle": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 44,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 44,
+          "empty_with_fp": 44,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 44,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 44,
+          "empty_with_fp": 44,
+          "empty_images": 50
+        }
+      },
+      "butterfly": {
+        "0.5": {
+          "n": 181,
+          "tp": 181,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.9890710382513661,
+          "f1": 0.9945054945054945,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 181,
+          "tp": 163,
+          "fp": 18,
+          "fn": 20,
+          "precision": 0.9005524861878453,
+          "recall": 0.8907103825136612,
+          "f1": 0.8956043956043956,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "caterpillar": {
+        "0.5": {
+          "n": 9,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 6,
+          "empty_with_fp": 6,
+          "empty_images": 9
+        },
+        "0.75": {
+          "n": 9,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 6,
+          "empty_with_fp": 6,
+          "empty_images": 9
+        }
+      },
+      "hymenoptera": {
+        "0.5": {
+          "n": 50,
+          "tp": 0,
+          "fp": 48,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 48,
+          "empty_with_fp": 48,
+          "empty_images": 50
+        },
+        "0.75": {
+          "n": 50,
+          "tp": 0,
+          "fp": 48,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 48,
+          "empty_with_fp": 48,
+          "empty_images": 50
+        }
+      },
+      "moth": {
+        "0.5": {
+          "n": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        },
+        "0.75": {
+          "n": 10,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "fp_on_empty": 0,
+          "empty_with_fp": 0,
+          "empty_images": 0
+        }
+      },
+      "plant": {
+        "0.5": {
+          "n": 100,
+          "tp": 0,
+          "fp": 45,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 45,
+          "empty_with_fp": 45,
+          "empty_images": 100
+        },
+        "0.75": {
+          "n": 100,
+          "tp": 0,
+          "fp": 45,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0.0,
+          "fp_on_empty": 45,
+          "empty_with_fp": 45,
+          "empty_images": 100
+        }
+      }
+    }
+  }
+}

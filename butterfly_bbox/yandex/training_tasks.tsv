@@ -1,0 +1,15 @@
+INPUT:photo_id	INPUT:image	INPUT:reference	GOLDEN:passed	HINT:text
+2356956	https://inaturalist-open-data.s3.amazonaws.com/photos/2356956/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.190736,""y"":0.216374},""p2"":{""x"":0.885559,""y"":0.845029}}}]"	true	Включите тонкие лапки и усики за контуром крыла.
+1829765	https://inaturalist-open-data.s3.amazonaws.com/photos/1829765/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.392544,""y"":0.291022},""p2"":{""x"":0.684211,""y"":0.653251}}}]"	true	Антенны выходят влево за пределы крыла.
+1040387	https://inaturalist-open-data.s3.amazonaws.com/photos/1040387/original.JPG	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.138158,""y"":0.153595},""p2"":{""x"":0.907895,""y"":0.79085}}}]"	true	Взрослая ночная бабочка получает ту же целевую метку.
+198635	https://inaturalist-open-data.s3.amazonaws.com/photos/198635/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.067982,""y"":0.219298},""p2"":{""x"":1.0,""y"":0.77193}}}]"	true	Взрослая ночная бабочка на руке, рамка по видимым краям крыльев.
+397005	https://inaturalist-open-data.s3.amazonaws.com/photos/397005/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.21197,""y"":0.052632},""p2"":{""x"":0.870324,""y"":0.909357}}}]"	true	Белая ночная бабочка на листе.
+700024	https://inaturalist-open-data.s3.amazonaws.com/photos/700024/original.jpg	[]	true	На снимке божья коровка.
+552829	https://inaturalist-open-data.s3.amazonaws.com/photos/552829/original.jpg	[]	true	На цветке пчела.
+833522	https://inaturalist-open-data.s3.amazonaws.com/photos/833522/original.jpg	[]	true	Гусеницу не выделяют.
+552878	https://inaturalist-open-data.s3.amazonaws.com/photos/552878/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.399123,""y"":0.134503},""p2"":{""x"":0.870614,""y"":0.745614}}}]"	true	Отдельная рамка охватывает видимые части за соцветием.
+2271584	https://inaturalist-open-data.s3.amazonaws.com/photos/2271584/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.08114,""y"":0.204403},""p2"":{""x"":1.0,""y"":0.949686}}}]"	true	Правое крыло обрезано краем кадра. Рамка заканчивается у края.
+710288	https://inaturalist-open-data.s3.amazonaws.com/photos/710288/original.JPG	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.315789,""y"":0.229508},""p2"":{""x"":0.58114,""y"":0.652459}}},{""type"":""rectangle"",""data"":{""p1"":{""x"":0.532895,""y"":0.380328},""p2"":{""x"":0.802632,""y"":0.842623}}}]"	true	Два объекта касаются друг друга. Для каждого нужна своя рамка.
+1448632	https://inaturalist-open-data.s3.amazonaws.com/photos/1448632/original.jpg	"[{""type"":""rectangle"",""data"":{""p1"":{""x"":0.414062,""y"":0.383041},""p2"":{""x"":0.558593,""y"":0.482456}}}]"	true	Бабочка мала и находится среди красных цветов.
+19199	https://inaturalist-open-data.s3.amazonaws.com/photos/19199/original.jpg	[]	true	На снимке растительность без видимых взрослых бабочек.
+18976	https://inaturalist-open-data.s3.amazonaws.com/photos/18976/original.jpg	[]	true	На снимке растительность без видимых взрослых бабочек.
