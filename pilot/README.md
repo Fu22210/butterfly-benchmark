@@ -4,7 +4,7 @@
 
 [Сборщик](collect.py) · [Квоты отбора](sampling_config.json) · [Манифест](manifests/all500.jsonl) · [Описание процедуры](README.txt)
 
-Распакуйте [pilot-media.zip](https://github.com/Fu22210/butterfly-benchmark/releases/download/v1.0.0/pilot-media.zip) в корень репозитория. После этого можно открыть локальную галерею pilot/gallery.html или проверить файлы из корня клона.
+Распакуйте все части `pilot-media-*.zip` из [релиза](https://github.com/Fu22210/butterfly-benchmark/releases/tag/v1.0.0) в корень репозитория. После этого можно открыть локальную галерею pilot/gallery.html или проверить файлы из корня клона.
 
 ```bash
 python3 -m pip install -r pilot/requirements.txt

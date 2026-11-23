@@ -64,7 +64,14 @@ python3 strategy.py apply strategy_results/config.json contest/predictions /tmp/
 python3 contest/validate_submission.py contest/dataset.jsonl contest/submission-template.jsonl /tmp/butterfly-answer.jsonl
 ```
 
-**Запустить сами модели.** Распакуйте `team-media.zip` в корень клона. Исходные прогоны выполнены на NVIDIA A100 80 GB. Версии весов и промпты зафиксированы в коде. [Скачать фотографии и превью](https://github.com/Fu22210/butterfly-benchmark/releases/download/v1.0.0/team-media.zip) · [Установка и команды инференса](model_comparison/README.md) · [Настройки победителя](model_comparison/strategy_results/config.json)
+**Запустить сами модели.** Скачайте части командного набора из релиза и распакуйте их в корень клона. Исходные прогоны выполнены на NVIDIA A100 80 GB. Версии весов и промпты зафиксированы в коде. [Скачать фотографии и превью](https://github.com/Fu22210/butterfly-benchmark/releases/tag/v1.0.0) · [Установка и команды инференса](model_comparison/README.md) · [Настройки победителя](model_comparison/strategy_results/config.json)
+
+Из корня репозитория можно скачать все части одной командой GitHub CLI.
+
+```bash
+gh release download v1.0.0 --pattern 'team-media-*.zip' --dir /tmp/butterfly-team-media
+for part in /tmp/butterfly-team-media/*.zip; do unzip -qo "$part"; done
+```
 
 ## Материалы проекта
 
